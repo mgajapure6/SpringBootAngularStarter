@@ -31,10 +31,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-		<!-- <dependency>
-			<groupId>org.thymeleaf.extras</groupId>
-			<artifactId>thymeleaf-extras-springsecurity5</artifactId>
-		</dependency> -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
@@ -73,22 +69,13 @@
 									<goal>install-node-and-npm</goal>
 								</goals>
 							</execution>
-							<!-- <execution>
-								<id>npm install</id>
-								<goals>
-									<goal>npm</goal>
-								</goals>
-								<configuration>
-									<arguments>install</arguments>
-								</configuration>
-							</execution> -->
 							<execution>
 								<id>npm run build</id>
 								<goals>
 									<goal>npm</goal>
 								</goals>
 								<configuration>
-									<arguments>run-script mavenbuild</arguments>
+									<arguments>run-script build</arguments>
 								</configuration>
 							</execution>
 						</executions>

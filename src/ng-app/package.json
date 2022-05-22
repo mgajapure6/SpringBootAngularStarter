@@ -9,7 +9,6 @@
     "test": "ng test",
     "start-proxy" : "ng serve --proxy-config proxy.conf.json",
     "start-ssl-proxy" :  "ng serve --proxy-config proxy.ssl.conf.json --ssl true --host 0.0.0.0",
-    "mavenbuild" : "ng build --prod",
     "postinstall": "ngcc"
   },
   "private": true,
