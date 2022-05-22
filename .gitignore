@@ -47,6 +47,7 @@ src/ng-app/bazel-out
 # angular dependencies
 /node_modules
 src/ng-app/node_modules
+src/ng-app/node
 
 # profiling files
 chrome-profiler-events*.json

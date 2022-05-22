@@ -18,7 +18,7 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "aot": true,
-            "outputPath": "../main/resources/templates",
+            "outputPath": "../main/resources/static/ng-app",
             "index": "src/index.html",
             "main": "src/main.ts",
             "baseHref": "/ng-app/",

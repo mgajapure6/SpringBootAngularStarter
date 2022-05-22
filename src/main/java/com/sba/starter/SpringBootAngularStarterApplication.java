@@ -13,30 +13,30 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.servlet.resource.PathResourceResolver;
 
 @SpringBootApplication
-
 public class SpringBootAngularStarterApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(SpringBootAngularStarterApplication.class, args);
 	}
-	
+
 	@Configuration
-	public class MVCConfiguration implements WebMvcConfigurer{
+	public class MVCConfiguration implements WebMvcConfigurer {
 		@Override
 		public void addResourceHandlers(ResourceHandlerRegistry registry) {
-			registry.addResourceHandler("/")
-			.addResourceLocations("classpath:/templates/index.html")
+			registry
+			.addResourceHandler("/ng-app", "/ng-app/", "/ng-app/*/*")
+			.addResourceLocations("classpath:/static/ng-app/")
 			.setCacheControl(CacheControl.noStore().mustRevalidate())
 			.setCacheControl(CacheControl.noCache())
 			.resourceChain(true).addResolver(new PathResourceResolver() {
 				@Override
 				protected Resource getResource(String resourcePath, Resource location) throws IOException {
-					Resource resource  =  location.createRelative(resourcePath);
-					return resource.exists() && resource.isReadable() ? resource : new ClassPathResource("/templates/index.html");
+					Resource resource = location.createRelative(resourcePath);
+					return resource.exists() && resource.isReadable() ? resource
+							: new ClassPathResource("/static/ng-app/index.html");
 				}
 			});
 		}
 	}
 
-	
 }

@@ -19,10 +19,10 @@
 		<java.version>1.8</java.version>
 	</properties>
 	<dependencies>
-		<dependency>
+		<!-- <dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
-		</dependency>
+		</dependency> -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-thymeleaf</artifactId>
@@ -31,10 +31,10 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-		<dependency>
+		<!-- <dependency>
 			<groupId>org.thymeleaf.extras</groupId>
 			<artifactId>thymeleaf-extras-springsecurity5</artifactId>
-		</dependency>
+		</dependency> -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
@@ -54,7 +54,7 @@
 	</dependencies>
 	<profiles>
 		<profile>
-			<id>ng-profile</id>
+			<id>ng-build</id>
 			<build>
 				<plugins>
 					<plugin>
@@ -73,7 +73,7 @@
 									<goal>install-node-and-npm</goal>
 								</goals>
 							</execution>
-							<execution>
+							<!-- <execution>
 								<id>npm install</id>
 								<goals>
 									<goal>npm</goal>
@@ -81,14 +81,14 @@
 								<configuration>
 									<arguments>install</arguments>
 								</configuration>
-							</execution>
+							</execution> -->
 							<execution>
 								<id>npm run build</id>
 								<goals>
 									<goal>npm</goal>
 								</goals>
 								<configuration>
-									<arguments>run-script maven-build</arguments>
+									<arguments>run-script mavenbuild</arguments>
 								</configuration>
 							</execution>
 						</executions>
