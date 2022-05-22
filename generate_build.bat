@@ -1,0 +1,1 @@
+start "Spring boot Angular Build" mvn clean install -DskipTests -P ng-profile

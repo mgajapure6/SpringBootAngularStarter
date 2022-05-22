@@ -1,0 +1,102 @@
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+/dist
+src/ng-app/dist
+/tmp
+src/ng-app/tmp
+/out-tsc
+src/ng-app/out-tsc
+# Only exists if Bazel was run
+/bazel-out
+src/ng-app/bazel-out
+
+
+
+# angular dependencies
+/node_modules
+src/ng-app/node_modules
+
+# profiling files
+chrome-profiler-events*.json
+src/ng-app/chrome-profiler-events*.json
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+src/ng-app/.vscode/*
+src/ng-app/.vscode/settings.json
+src/ng-app/.vscode/tasks.json
+src/ng-app/.vscode/launch.json
+src/ng-app/.vscode/extensions.json
+src/ng-app/.history/*
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
+
+src/ng-app/.sass-cache
+src/ng-app/connect.lock
+src/ng-app/coverage
+src/ng-app/libpeerconnection.log
+src/ng-app/npm-debug.log
+src/ng-app/yarn-error.log
+src/ng-app/testem.log
+src/ng-app/typings
+
+# System Files
+.DS_Store
+Thumbs.db
+src/ng-app/.DS_Store
+src/ng-app/Thumbs.db
